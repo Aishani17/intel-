@@ -47,8 +47,8 @@ st.markdown('<div class="subheader">Compare Outputs of Teacher and Student Model
 # --- Load Models ---
 @st.cache_resource
 def load_models():
-    teacher = load_model("https://drive.google.com/file/d/1-09RblgTlvNECPI5AZet29XmJphF7aHr/view?usp=sharing", compile=False)
-    student = load_model("https://drive.google.com/file/d/1BlzHIVppHi50eG3oTLMloQnsrkET2JEx/view?usp=sharing", compile=False)
+    teacher = load_model("/content/drive/MyDrive/TeacherModel2/teacher_unet.h5", compile=False)
+    student = load_model("/content/drive/MyDrive/StudentModel3/stud_model_kd3.h5", compile=False)
     return teacher, student
 
 # --- Image Pre/Post Processing ---
