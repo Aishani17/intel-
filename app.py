@@ -4,6 +4,7 @@ from tensorflow.keras.models import load_model
 from PIL import Image
 import numpy as np
 import io
+import gdown
 
 # --- Page Configuration ---
 st.set_page_config(page_title="KD Demo: Teacher vs Student", layout="centered")
